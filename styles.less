@@ -1,0 +1,68 @@
+@dimension: 600px;
+@stage-bg: lightgray;
+@rectangle-color: green;
+@square-color: red;
+@circle-color: purple;
+@triangle-color: yellow;
+
+#container-a {
+    margin-right: 200px;
+    margin-bottom: 50px;
+}    
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav {
+    border: 2px dashed black;
+    float: right;
+}
+#container {
+    margin-top: 10px;
+    position: relative;
+}
+#stage {
+    width: @dimension;
+    height: @dimension;
+    background-color: @stage-bg;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+    .shape {
+    cursor: pointer;
+    position: absolute;
+
+        &.rectangle {
+        background-color: @rectangle-color;
+        opacity: 0.5;
+    }
+        &.square {
+        background-color: @square-color;
+        opacity: 0.5;
+    }
+        &.circle {
+        background-color: @circle-color;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+        &.triangle {
+        border-width: 0;
+        border-color: transparent;
+        border-bottom-color: @triangle-color;
+        border-style: solid;
+        opacity: 0.5;
+        }
+    }
+}
+
+#detail-pane {
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+    margin: 0 30px;
+    vertical-align: top;
+}

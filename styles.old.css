@@ -1,0 +1,65 @@
+#container-a {
+    margin-right: 200px;
+    margin-bottom: 50px;
+}    
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav {
+    border: 2px dashed black;
+    float: right;
+}
+#container {
+    margin-top: 10px;
+    position: relative;
+}
+#stage {
+    width: 600px;
+    height: 600px;
+    background-color: lightgray;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#detail-pane {
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+    margin: 0 30px;
+    vertical-align: top;
+}
+
+.shape {
+    cursor: pointer;
+    position: absolute;
+}
+
+.rectangle {
+    background-color: green;
+    opacity: 0.5;
+
+}
+
+.square {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.circle {
+    background-color: purple;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.triangle {
+    border-width: 0;
+    border-color: transparent;
+    border-bottom-color: yellow;
+    border-style: solid;
+    opacity: 0.5;
+}
